@@ -1,0 +1,62 @@
+	Assuming no spaces in directory names
+	prints error message is there is an invalid command
+1. cd : changes directory 
+		options "-", " ", "~" 
+		"-" and " " changes directory to the default directory
+		"~" chagnes directory to the default directory and prints it
+		a. can't cd into a directory that doesn't exist
+		b. can't cd in a file
+2. echo: prints string
+		 options "-n" 
+		 "-n" does not give a new line after printing
+3. history: prints all the previous commands given to the shell
+			options "-c" "number"
+			"-c" clears history
+			"-d offset" prints the list d commands in the history
+			a. if d is greater than the number of commands in the history, it just prints all the commands of the history
+			b. if the flags are invalid it gives error
+			c. if there is a string in the offset position it gives error
+4. pwd: prints working directory
+		
+
+5. cat: prints content in a text file
+		options "-n", "-b"
+		"-n" prints numbers along with the lines printed
+		"-b" prints numbers along the non empty lines
+		a. prints multiple files if given as arguement
+		b. checks if file exists and gives error if it doesn't
+		c. checks if argument is directory
+
+6. date: prints current date and time
+		 options "+%b" "+%B" "+%D" "+%F"
+		 "+%b" prints abbreviated month
+		 "+%B" prints full month name
+		 "+%D" prints date in format mm/dd/yy
+		 "+%F" prints date in format yyyy/dd/mm
+		 a. Gives error if format is incorrect
+
+7. rm: deletes file/directory
+	   options "-i" "-d"
+	   "-i" confirms before deleting
+	   "-d" deletes empty directory
+	   a. checks if file exists
+	   b. does not delete directory without -d
+	   c. does not delete empty directory
+
+8. ls: lists files and directory
+	   options "-m" "-p"
+	   "-m" prints files/directories comma separated
+	   "-p" prints directories with a '/'
+	   a. Both -m and -p can be used together
+	   b. can't ls into a file that is not a directory
+	   c. Returns error if flags are not used correctly
+	   d. ls works in current directory if there is not file arguement
+
+9. mkdir: creates a new directory
+		  option "-v" "-p"
+		  "-v" list directories when they are created
+		  "-p" does not show error when creating a directory that already exists
+		  a. checks if directory already exists, shows error if it does
+		  b. can make multiple files
+
+10. quit: exits the shell

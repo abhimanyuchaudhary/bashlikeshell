@@ -1,0 +1,21 @@
+cd ..
+cd
+mkdir a c/b
+mkdir -v s
+mkdir -p s
+cat -n a.txt test/b.txt
+cat -d a.txt b.txt
+echo hello
+echo -n hello
+history
+history 5
+history -c
+pwd
+date +%b
+date +%F
+rm -i a.txt
+rm -i c/b
+ls a
+ls -p a
+ls -p
+quit
